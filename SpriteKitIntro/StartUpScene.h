@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  StartUpScene.h
 //  SpriteKitIntro
 //
 //  Created by Renu P on 10/20/13.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface ViewController : UIViewController
+@interface StartUpScene : SKScene
 
 @end

@@ -21,6 +21,9 @@
 		AF29E7B918144BC800ED77AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF29E79B18144BC800ED77AB /* UIKit.framework */; };
 		AF29E7C118144BC800ED77AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF29E7BF18144BC800ED77AB /* InfoPlist.strings */; };
 		AF29E7C318144BC800ED77AB /* SpriteKitIntroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF29E7C218144BC800ED77AB /* SpriteKitIntroTests.m */; };
+		AFD1FEBF18145AA80024D34B /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD1FEBE18145AA80024D34B /* SpriteKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AFD1FEC518146FE20024D34B /* StartUpScene.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD1FEC418146FE20024D34B /* StartUpScene.m */; };
+		AFD1FF0F181481FE0024D34B /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD1FF0E181481FE0024D34B /* Spaceship.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		AF29E7BE18144BC800ED77AB /* SpriteKitIntroTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKitIntroTests-Info.plist"; sourceTree = "<group>"; };
 		AF29E7C018144BC800ED77AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AF29E7C218144BC800ED77AB /* SpriteKitIntroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitIntroTests.m; sourceTree = "<group>"; };
+		AFD1FEBE18145AA80024D34B /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		AFD1FEC318146FE20024D34B /* StartUpScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUpScene.h; sourceTree = "<group>"; };
+		AFD1FEC418146FE20024D34B /* StartUpScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartUpScene.m; sourceTree = "<group>"; };
+		AFD1FF0E181481FE0024D34B /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD1FEBF18145AA80024D34B /* SpriteKit.framework in Frameworks */,
 				AF29E79A18144BC800ED77AB /* CoreGraphics.framework in Frameworks */,
 				AF29E79C18144BC800ED77AB /* UIKit.framework in Frameworks */,
 				AF29E79818144BC800ED77AB /* Foundation.framework in Frameworks */,
@@ -101,6 +109,7 @@
 		AF29E79618144BC800ED77AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFD1FEBE18145AA80024D34B /* SpriteKit.framework */,
 				AF29E79718144BC800ED77AB /* Foundation.framework */,
 				AF29E79918144BC800ED77AB /* CoreGraphics.framework */,
 				AF29E79B18144BC800ED77AB /* UIKit.framework */,
@@ -112,9 +121,12 @@
 		AF29E79D18144BC800ED77AB /* SpriteKitIntro */ = {
 			isa = PBXGroup;
 			children = (
+				AFD1FF0E181481FE0024D34B /* Spaceship.png */,
 				AF29E7A618144BC800ED77AB /* AppDelegate.h */,
 				AF29E7A718144BC800ED77AB /* AppDelegate.m */,
 				AF29E7A918144BC800ED77AB /* Main.storyboard */,
+				AFD1FEC318146FE20024D34B /* StartUpScene.h */,
+				AFD1FEC418146FE20024D34B /* StartUpScene.m */,
 				AF29E7AC18144BC800ED77AB /* ViewController.h */,
 				AF29E7AD18144BC800ED77AB /* ViewController.m */,
 				AF29E7AF18144BC800ED77AB /* Images.xcassets */,
@@ -228,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD1FF0F181481FE0024D34B /* Spaceship.png in Resources */,
 				AF29E7B018144BC800ED77AB /* Images.xcassets in Resources */,
 				AF29E7A218144BC800ED77AB /* InfoPlist.strings in Resources */,
 				AF29E7AB18144BC800ED77AB /* Main.storyboard in Resources */,
@@ -249,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD1FEC518146FE20024D34B /* StartUpScene.m in Sources */,
 				AF29E7AE18144BC800ED77AB /* ViewController.m in Sources */,
 				AF29E7A818144BC800ED77AB /* AppDelegate.m in Sources */,
 				AF29E7A418144BC800ED77AB /* main.m in Sources */,
@@ -381,7 +395,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpriteKitIntro/SpriteKitIntro-Prefix.pch";
 				INFOPLIST_FILE = "SpriteKitIntro/SpriteKitIntro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,7 +410,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpriteKitIntro/SpriteKitIntro-Prefix.pch";
 				INFOPLIST_FILE = "SpriteKitIntro/SpriteKitIntro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +478,7 @@
 				AF29E7C818144BC800ED77AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF29E7C918144BC800ED77AB /* Build configuration list for PBXNativeTarget "SpriteKitIntroTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +487,7 @@
 				AF29E7CB18144BC800ED77AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
